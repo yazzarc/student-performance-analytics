@@ -1,0 +1,155 @@
+STUDENT PERFORMANCE ANALYTICS SYSTEM
+========================================================================
+Dataset: students.csv
+Sample data is fictional when using the supplied students.csv.
+Pass: at least 40 in every subject. Marks are out of 100.
+Grades: A+ >=90, A >=80, B >=70, C >=60, D >=50, E >=40.
+Any failed subject gives grade F, even when the average is high.
+Attendance below 75% is flagged separately; it does not change the result.
+Grades and ranking use unrounded averages. Display uses two decimals.
+
+DATASET CHECK
+-------------
+Student records: 24
+Columns: 9
+Missing values: 0
+         Column  Type
+     Student_ID   str
+           Name   str
+     Department   str
+         Python int64
+    Mathematics int64
+     Statistics int64
+        English int64
+Computer_Basics int64
+     Attendance int64
+
+LOADED DATA
+-----------
+Student_ID         Name Department  Python  Mathematics  Statistics  English  Computer_Basics  Attendance
+      S001 Aarav Sharma        BCA      94           90          92       88               96          96
+      S002   Meera Nair     BSc CS      96           94          95       91               94          98
+      S003 Nikhil Verma     BSc IT      78           82          74       80               86          87
+      S004   Ananya Rao        BCA      90           93          89       94               94          95
+      S005  Rohan Singh     BSc CS      65           58          62       70               75          79
+      S006    Sana Khan     BSc IT      88           86          90       89               87          92
+      S007 Vikram Patel        BCA      85           88          82       87               88          89
+      S008   Kavya Iyer     BSc CS      89           84          86       85               86          94
+      S009   Aditya Das     BSc IT      72           68          75       73               77          82
+      S010  Priya Menon        BCA      81           78          83       86               82          90
+      S011  Rahul Yadav     BSc CS      35           55          48       62               60          68
+      S012   Neha Joshi     BSc IT      56           52          58       61               63          76
+      S013  Arjun Reddy        BCA      40           44          46       50               45          75
+      S014   Ishita Sen     BSc CS      69           72          70       78               76          86
+      S015  Karan Gupta     BSc IT      28           32          36       45               39          61
+      S016   Pooja Shah        BCA      61           64          59       72               69          73
+      S017 Dev Malhotra     BSc CS     100           39          85       88               91          84
+      S018 Aisha Thomas     BSc IT      76           79          81       84               80          91
+      S019  Manav Kumar        BCA      48           42          40       55               50          74
+      S020    Riya Bose     BSc CS      82           85          79       90               84          93
+      S021   Sahil Jain     BSc IT      39           40          41       52               47          70
+      S022    Tanya Roy        BCA      57           38          49       65               60          78
+      S023   Om Prakash     BSc CS      30           25          33       42               35          65
+      S024 Divya Pillai     BSc IT      68           73          71       80               78          88
+
+STUDENT RESULTS (TOTAL OUT OF 500)
+----------------------------------
+Student_ID         Name Department  Total  Average Grade Result  Attendance Attendance_Status
+      S001 Aarav Sharma        BCA 460.00    92.00    A+   Pass          96           Regular
+      S002   Meera Nair     BSc CS 470.00    94.00    A+   Pass          98           Regular
+      S003 Nikhil Verma     BSc IT 400.00    80.00     A   Pass          87           Regular
+      S004   Ananya Rao        BCA 460.00    92.00    A+   Pass          95           Regular
+      S005  Rohan Singh     BSc CS 330.00    66.00     C   Pass          79           Regular
+      S006    Sana Khan     BSc IT 440.00    88.00     A   Pass          92           Regular
+      S007 Vikram Patel        BCA 430.00    86.00     A   Pass          89           Regular
+      S008   Kavya Iyer     BSc CS 430.00    86.00     A   Pass          94           Regular
+      S009   Aditya Das     BSc IT 365.00    73.00     B   Pass          82           Regular
+      S010  Priya Menon        BCA 410.00    82.00     A   Pass          90           Regular
+      S011  Rahul Yadav     BSc CS 260.00    52.00     F   Fail          68               Low
+      S012   Neha Joshi     BSc IT 290.00    58.00     D   Pass          76           Regular
+      S013  Arjun Reddy        BCA 225.00    45.00     E   Pass          75           Regular
+      S014   Ishita Sen     BSc CS 365.00    73.00     B   Pass          86           Regular
+      S015  Karan Gupta     BSc IT 180.00    36.00     F   Fail          61               Low
+      S016   Pooja Shah        BCA 325.00    65.00     C   Pass          73               Low
+      S017 Dev Malhotra     BSc CS 403.00    80.60     F   Fail          84           Regular
+      S018 Aisha Thomas     BSc IT 400.00    80.00     A   Pass          91           Regular
+      S019  Manav Kumar        BCA 235.00    47.00     E   Pass          74               Low
+      S020    Riya Bose     BSc CS 420.00    84.00     A   Pass          93           Regular
+      S021   Sahil Jain     BSc IT 219.00    43.80     F   Fail          70               Low
+      S022    Tanya Roy        BCA 269.00    53.80     F   Fail          78           Regular
+      S023   Om Prakash     BSc CS 165.00    33.00     F   Fail          65               Low
+      S024 Divya Pillai     BSc IT 370.00    74.00     B   Pass          88           Regular
+
+CLASS SUMMARY (MARKS OUT OF 100; ATTENDANCE AND PASS RATE IN %)
+---------------------------------------------------------------
+Students: 24
+Passed: 18
+Failed: 6
+Pass percentage: 75.00
+Class average: 69.34
+Highest average: 94.00
+Lowest average: 33.00
+Median average: 73.50
+Average attendance: 82.67
+Low attendance count: 6
+
+HIGHEST AVERAGE
+---------------
+Student_ID       Name  Average
+      S002 Meera Nair    94.00
+
+LOWEST AVERAGE
+--------------
+Student_ID       Name  Average
+      S023 Om Prakash    33.00
+
+SUBJECT ANALYSIS (MARKS OUT OF 100)
+-----------------------------------
+        Subject  Highest  Lowest  Average  Passed  Failed  Pass_Percentage
+         Python   100.00   28.00    67.79      20       4            83.33
+    Mathematics    94.00   25.00    65.04      20       4            83.33
+     Statistics    95.00   33.00    67.67      22       2            91.67
+        English    94.00   42.00    73.62      24       0           100.00
+Computer_Basics    96.00   35.00    72.58      22       2            91.67
+Best subject average: English
+
+TOP 5 STUDENTS BY AVERAGE (INCLUDING TIES)
+------------------------------------------
+ Rank Student_ID         Name Department  Total  Average Grade Result  Attendance Attendance_Status
+    1       S002   Meera Nair     BSc CS 470.00    94.00    A+   Pass          98           Regular
+    2       S001 Aarav Sharma        BCA 460.00    92.00    A+   Pass          96           Regular
+    2       S004   Ananya Rao        BCA 460.00    92.00    A+   Pass          95           Regular
+    4       S006    Sana Khan     BSc IT 440.00    88.00     A   Pass          92           Regular
+    5       S007 Vikram Patel        BCA 430.00    86.00     A   Pass          89           Regular
+    5       S008   Kavya Iyer     BSc CS 430.00    86.00     A   Pass          94           Regular
+
+GRADE DISTRIBUTION
+------------------
+Grade  Students
+   A+         3
+    A         7
+    B         3
+    C         2
+    D         1
+    E         2
+    F         6
+
+STUDENTS WITH FAILED SUBJECTS
+-----------------------------
+Student_ID         Name                                  Failed_Subjects
+      S011  Rahul Yadav                                           Python
+      S015  Karan Gupta Python, Mathematics, Statistics, Computer_Basics
+      S017 Dev Malhotra                                      Mathematics
+      S021   Sahil Jain                                           Python
+      S022    Tanya Roy                                      Mathematics
+      S023   Om Prakash Python, Mathematics, Statistics, Computer_Basics
+
+LOW ATTENDANCE
+--------------
+Student_ID        Name  Attendance Result
+      S011 Rahul Yadav          68   Fail
+      S015 Karan Gupta          61   Fail
+      S016  Pooja Shah          73   Pass
+      S019 Manav Kumar          74   Pass
+      S021  Sahil Jain          70   Fail
+      S023  Om Prakash          65   Fail

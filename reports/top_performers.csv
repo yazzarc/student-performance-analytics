@@ -1,0 +1,7 @@
+Rank,Student_ID,Name,Department,Python,Mathematics,Statistics,English,Computer_Basics,Attendance,Total,Average,Result,Grade,Attendance_Status,Failed_Subjects
+1,S002,Meera Nair,BSc CS,96,94,95,91,94,98,470.00,94.00,Pass,A+,Regular,
+2,S001,Aarav Sharma,BCA,94,90,92,88,96,96,460.00,92.00,Pass,A+,Regular,
+2,S004,Ananya Rao,BCA,90,93,89,94,94,95,460.00,92.00,Pass,A+,Regular,
+4,S006,Sana Khan,BSc IT,88,86,90,89,87,92,440.00,88.00,Pass,A,Regular,
+5,S007,Vikram Patel,BCA,85,88,82,87,88,89,430.00,86.00,Pass,A,Regular,
+5,S008,Kavya Iyer,BSc CS,89,84,86,85,86,94,430.00,86.00,Pass,A,Regular,
